@@ -1,15 +1,3 @@
-/**********************************************************************************
- *  TITLE: WiFi (SinricPro) + IR + Manual Switch (latched) control 4 Relays using Arduino EEPROM
- *  Click on the following links to learn more. 
- *  YouTube Video: https://youtu.be/YpddzFyWMHA
- *  Related Blog : https://iotcircuithub.com/arduino-iot-project-with-google-assistant-alexa/
- *  by Tech StudyCell
- *
- *  Download the libraries 
- *  IRremote 3.5.2 Library:  https://github.com/Arduino-IRremote/Arduino-IRremote
- *  Arduino-timer 2.3.1 Library: https://github.com/contrem/arduino-timer
- **********************************************************************************/
-
 #include <EEPROM.h>
 #include <IRremote.h>
 #include <SoftwareSerial.h>
