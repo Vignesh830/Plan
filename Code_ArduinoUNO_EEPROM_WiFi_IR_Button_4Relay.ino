@@ -1,15 +1,3 @@
-/**********************************************************************************
- *  TITLE: WiFi (SinricPro) + IR + Manual Button (momentary) control 4 Relays using Arduino EEPROM
- *  Click on the following links to learn more. 
- *  YouTube Video: https://youtu.be/YpddzFyWMHA
- *  Related Blog : https://iotcircuithub.com/arduino-iot-project-with-google-assistant-alexa/
- *  by Tech StudyCell
- *
- *  Download the libraries 
- *  IRremote 3.5.2 Library:  https://github.com/Arduino-IRremote/Arduino-IRremote
- *  AceButton 1.9.1 Library: https://github.com/bxparks/AceButton
- *  Arduino-timer 2.3.1 Library: https://github.com/contrem/arduino-timer
- **********************************************************************************/
 
 #include <EEPROM.h>
 #include <IRremote.h>
@@ -20,7 +8,7 @@
 auto timer = timer_create_default(); // create a timer with default settings
 using namespace ace_button;
 
-SoftwareSerial mySerial(2, 3); // RX, TX D2, D3
+SoftwareSerial mySerial(2, 3); // RX, TX D2, D
 
 // define the GPIO connected with Relays and switches
 #define RelayPin1 4  //D4
