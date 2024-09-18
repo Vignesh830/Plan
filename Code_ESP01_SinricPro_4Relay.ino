@@ -1,21 +1,3 @@
- /**********************************************************************************
- *  TITLE: Multiple SinricPro Switch device for ESP01 (send data to Arduino through Serial Terminal)
- *  Click on the following links to learn more. 
- *  YouTube Video: https://youtu.be/YpddzFyWMHA
- *  Related Blog : https://iotcircuithub.com/arduino-iot-project-with-google-assistant-alexa/
- *  by Tech StudyCell
- *
- *  Download the libraries 
- *  SinricPro 2.9.14 Library:     https://github.com/sinricpro/esp8266-esp32-sdk
- *  ArduinoJson 6.19.1 Library:   https://github.com/bblanchon/ArduinoJson
- *  WebSockets 2.3.5 Library:     https://github.com/Links2004/arduinoWebSockets
- *  IRremote 3.5.2 Library:       https://github.com/Arduino-IRremote/Arduino-IRremote
- *  Arduino-timer 2.3.1 Library:  https://github.com/contrem/arduino-timer
- **********************************************************************************/
-
-// Uncomment the following line to enable serial debug output
-//#define ENABLE_DEBUG
-
 #ifdef ENABLE_DEBUG
        #define DEBUG_ESP_PORT Serial
        #define NODEBUG_WEBSOCKETS
@@ -27,15 +9,15 @@
 #include "SinricPro.h"
 #include "SinricProSwitch.h"
 
-#define WIFI_SSID         "WIFI_NAME"    
-#define WIFI_PASS         "WIFI_PASSWORD"
-#define APP_KEY           "APP_KEY"
-#define APP_SECRET        "APP_SECRET"
+#define WIFI_SSID         "WIFI_NAME"  / your private wifi name.  
+#define WIFI_PASS         "WIFI_PASSWORD" /your wifi password.
+#define APP_KEY           "APP_KEY"/which is get by SinricPro while creating.
+#define APP_SECRET        "APP_SECRET" /which is get by SinricPro while creating.
 
-#define SWITCH_ID_1       "YOUR-DEVICE-ID"    
-#define SWITCH_ID_2       "YOUR-DEVICE-ID"    
-#define SWITCH_ID_3       "YOUR-DEVICE-ID"    
-#define SWITCH_ID_4       "YOUR-DEVICE-ID"    
+#define SWITCH_ID_1       "YOUR-DEVICE-ID" /which your assigned in cloud and the dedicated device.   
+#define SWITCH_ID_2       "YOUR-DEVICE-ID" /which your assigned in cloud and the dedicated device.  
+#define SWITCH_ID_3       "YOUR-DEVICE-ID" /which your assigned in cloud and the dedicated device.
+#define SWITCH_ID_4       "YOUR-DEVICE-ID" /which your assigned in cloud and the dedicated device.   
 
 #define BAUD_RATE         9600                // Change baudrate to your need
 
