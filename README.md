@@ -18,7 +18,7 @@ FTDI232 USB to TTL
 
 
 Circuit of the Arduino IoT Project using ESP-01
-https://iotcircuithub.com/wp-content/uploads/2022/02/arduino-esp8266-iot-project-circuit-s1.jpg![image](https://github.com/user-attachments/assets/3441fd98-abd9-4a33-92f0-326128b1358b)
+
 
 The circuit is very simple, I have used D4, D5, D6 & D7 GPIO to control the 4-channel relay module.
 And the GPIO D10, D11, D12 & D13 are connected with switches to control the relay module manually.
@@ -30,7 +30,7 @@ As per the source code, when the control pins of the relay module receive the LO
 I have used an 1117 3.3V voltage regulator to supply the ESP01. 
 If you use Arduino UNO then you can use the 3.3V pin instead of the 1117 3.3V regulator but for Arduino Nano, you have to use the 1117 3.3V voltage regulator.
 
-https://iotcircuithub.com/wp-content/uploads/2022/02/arduino-esp8266-iot-project-circuit-s2.jpg![image](https://github.com/user-attachments/assets/1f92b0d1-0bc8-47ce-ac4b-918b1773ee74)
+
 
 If you want to use push-button for manual control, then just connect pushbuttons instead of latched switches.
 
